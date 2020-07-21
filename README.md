@@ -3,6 +3,7 @@ MVC
 Flask
 
 MVC is a framework
+- It us used to present data that would normally be in the terminal into a web browser
 MVC - Module view controller
 flask run - This is used to run the app using flask
 

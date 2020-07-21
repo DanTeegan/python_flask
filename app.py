@@ -1,5 +1,5 @@
-from flask import Flask
-# Import flask
+from flask import Flask, render_template, url_for, request
+# Import flask and also render_template
 
 # In order for us to use flask we need to create an instance of our app.
 app = Flask(__name__) # This is the standard syntax to create a flask instance
@@ -18,11 +18,15 @@ def index():
 # Return "Welcome to Python flask app dear" + {name}
 # We want to achieve - In the browser when we load the page from the homepage to username i.e your name
 # It should display your name in the browser with message from your method
+# @app.route("/<username>")
+# def welcome_user(username):
+#     return f"<h2>Welcome to Python flask app dear {username}</h2>"
+
+
 @app.route("/<username>")
-
 def welcome_user(username):
+    return render_template("index.html")
 
-    return f"<h2>Welcome to Python flask app dear {username}</h2>"
 
 # Index method will be called at the end point (where we connect to)
 # The Index method will display on our home/default page
