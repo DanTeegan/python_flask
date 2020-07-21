@@ -4,6 +4,7 @@ Flask
 
 MVC is a framework
 MVC - Module view controller
+flask run - This is used to run the app using flask
 
 ### Model
 
