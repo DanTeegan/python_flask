@@ -18,10 +18,11 @@ def index():
 # Return "Welcome to Python flask app dear" + {name}
 # We want to achieve - In the browser when we load the page from the homepage to username i.e your name
 # It should display your name in the browser with message from your method
-@app.route("/Daniel")
+@app.route("/<username>")
 
-def welcome_user():
-    return "Welcome to Python flask app dear Daniel"
+def welcome_user(username):
+
+    return f"<h2>Welcome to Python flask app dear {username}</h2>"
 
 # Index method will be called at the end point (where we connect to)
 # The Index method will display on our home/default page
