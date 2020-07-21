@@ -1,3 +1,14 @@
 Welcome to this repository we will talk about:
-NVC
+MVC
 Flask
+
+MVC is a framework
+MVC - Module view controller
+
+### Model
+
+
+### Controller
+
+### View
+Web broswer
